@@ -16,8 +16,6 @@ const low = document.getElementById("low")
 
 let score = 0
 let item =""
-localStorage.setItem("highscore")
-const hscore = localStorage.getItem("highscore")
 const arr = ["images/Rock.png","images/Paper.png","images/Sicssor.png"]
 let isAlive = 3
 
@@ -61,6 +59,7 @@ back.addEventListener("click",function(){
 })
 
 function hiscore(){
+    const hscore = localStorage.getItem("highscore")
     points.textContent = "SCORE : " + score
     if(score > Number(hscore)){
         localStorage.setItem("highscore",String(score))
