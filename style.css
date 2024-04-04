@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body{
+    height:100vh;
+    width:100vw;
+    background-color:#86A7FC;
+}
+.forpop{
+    margin-top:0px;
+    position: relative;
+    min-width:350px;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width:350px;
+    height:750px;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #008DDA;
+    padding:20px;
+}
+#result{
+    height:120px;
+    width:120px;
+    background-image: url(images/letsplay.jpeg);
+    border-radius: 50%;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+#player{
+    height:120px;
+    width:120px;
+    background-image: url(images/plays.jpeg);
+    border-radius: 50%;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+#select{
+    margin-top:20px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+#select button:hover{
+    transform:translate(2px,1px);
+    border:1px solid greenyellow;
+}
+#select button:active{
+    background-color: lightgreen;
+}
+#score{
+    width:90%;
+    text-align: center;
+    height: 40px;
+    margin-top:30px;
+    border-radius: 5px;
+    padding-top:6px;
+    background-color: #C9D7DD;
+}
+#life{
+    width:90%;
+    height: 10px;
+    margin-top:40px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+}
+.popup{
+    height:400px;
+    width:320px;
+    position:absolute;
+    background-color: #EA7773;
+    margin:auto;
+    border-radius:20px;
+    text-align: center;
+    color: white;
+    transform: scale(0);
+    visibility: hidden;
+    transition:0.5s;
+}
+.popup img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin:30px 105px;
+    user-select: none;
+}
+.popup p{
+    margin:20px auto;
+    user-select: none;
+}
+.popup button{
+    padding:20px 40px;
+    border-radius:10px;
+    border:none;
+    user-select: none;
+}
+.popup button:active{
+    background-color:rgb(209, 243, 159);
+}
+.open{
+    transform: scale(1);
+    visibility: visible;
+}
+#rock{
+    height:70px;
+    width:70px;
+    border-radius:50%;
+    background-image: url(images/Rock.png);
+    background-size: cover;
+    border:none;
+}
+#paper{
+    height:70px;
+    width:70px;
+    border-radius:50%;
+    background-image: url(images/Paper.png);
+    background-size: cover;
+    border:none;
+}
+#sicssor{
+    height:70px;
+    width:70px;
+    border-radius:50%;
+    background-image: url(images/Sicssor.png);
+    background-size: cover;
+    border:none;
+}
+#full{
+    width: 33%;
+    height:inherit;
+    background-color:#99BC85;
+    flex-grow: 1;
+}
+#half{
+    width: 33%;
+    height:inherit;
+    background-color: #BFD8AF;
+}
+#low{
+    width: 33%;
+    height:inherit;
+    background-color: #D4E7C5;
+    flex-grow: 1;
+}
